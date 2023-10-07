@@ -11,33 +11,34 @@
 
 </head>
 <body>
+    <iframe src="header.html" frameborder="0" scrolling="no" width="100%" height="180"></iframe>
     <div class="container">
         <h1 class="text-center mt-4">APPLICATION FOR REGISTRATION OF TRADE UNIONS</h1>
         <h2>FORM</h2>
-        <form id="dataForm" class="custom-form">
+        <form id="dataForm" class="custom-form" action="upload.php" method="POST" enctype="multipart/form-data">
             <div class="form-group">
                 <label for="name">Name of Trade Union</label>
                 <input type="text" class="form-control" name="name" id="name" oninput="checkNameExists()" required>
                 <div id="nameError" class="text-danger"></div>
-            </div>
+             </div>
 
-            <div class="form-group">
+             <div class="form-group">
                 <label for="address">Address:</label>
                 <input type="text" class="form-control" name="address" id="address" required>
-            </div>
+             </div>
             
-            <div class="form-group">
+             <div class="form-group">
                 <label for="date">Date of Establishment of Trade Union</label>
                 <input type="date" class="form-control" name="date" id="date" required>
-            </div>
+             </div>
             
-            <label for="name">President</label>
+             <label for="name">President</label>
 
-            <div class="form-group">
+             <div class="form-group">
                 <label for="preName">Name</label>
                 <input type="text" class="form-control" name="preName" id="preName" required>
-            </div>
-            <div class="form-group">
+             </div>
+             <div class="form-group">
                 <div class="row">
                     <div class="col">
                         <label for="preNIC">National Identity Card (NIC)</label>
@@ -48,8 +49,8 @@
                         <input type="text" class="form-control" name="preWhatNum" id="preWhatNum" required>
                     </div>
                 </div>
-            </div>
-            <div class="form-group">
+             </div>
+             <div class="form-group">
                 <div class="row">
                     <div class="col">
                         <label for="preConNum">Contact Number</label>
@@ -60,6 +61,44 @@
                         <input type="text" class="form-control" name="preEmail" id="preEmail" required>
                     </div>
                 </div>
+            </div>
+
+            <label for="name">Secretary</label>
+
+             <div class="form-group">
+                <label for="secName">Name</label>
+                <input type="text" class="form-control" name="secName" id="secName" required>
+             </div>
+             <div class="form-group">
+                <div class="row">
+                    <div class="col">
+                        <label for="secNIC">National Identity Card (NIC)</label>
+                        <input type="text" class="form-control" name="secNIC" id="secNIC" required>
+                    </div>
+                    <div class="col">
+                        <label for="secWhatNum">Whatsapp Number</label>
+                        <input type="text" class="form-control" name="secWhatNum" id="secWhatNum" required>
+                    </div>
+                </div>
+             </div>
+             <div class="form-group">
+                <div class="row">
+                    <div class="col">
+                        <label for="secConNum">Contact Number</label>
+                        <input type="text" class="form-control" name="secConNum" id="secConNum" required>
+                    </div>
+                    <div class="col">
+                        <label for="secEmail">Email</label>
+                        <input type="text" class="form-control" name="secEmail" id="secEmail" required>
+                    </div>
+                </div>
+            </div>
+
+            <label for="name">Upload B Form</label>
+            
+            <div class="form-group">
+                <label for="file">Upload B-Form</label>
+                <input type="file" class="form-control-file" name="file" id="file">
             </div>
             
                       
@@ -82,6 +121,19 @@
                 var address = $("#address").val();
                 var date = $("#date").val();
 
+                var preName = $("#preName").val();
+                var preNIC = $("#preNIC").val();
+                var preWhatNum = $("#preWhatNum").val();
+                var preConNum = $("#preConNum").val();
+                var preEmail = $("#preEmail").val();
+
+                var secName = $("#secName").val();
+                var secNIC = $("#secNIC").val();
+                var secWhatNum = $("#secWhatNum").val();
+                var secConNum = $("#secConNum").val();
+                var secEmail = $("#secEmail").val();
+                
+
                 if (name.trim() === "") {
                     // Display an error message for empty name field
                     $("#nameError").html("Name cannot be empty!");
@@ -91,7 +143,9 @@
                 $.ajax({
                     type: "POST",
                     url: "db_connect.php",
-                    data: { name: name, address: address, date:date },
+                    data: { name: name, address: address, date:date, preName:preName, preNIC:preNIC, preWhatNum:preWhatNum, preConNum:preConNum, preEmail:preEmail, 
+                        secName:secName, secNIC:secNIC, secWhatNum:secWhatNum, secConNum:secConNum, secEmail:secEmail },
+
                     success: function(response) {
                         if (response === "success") {
                             alert("Data inserted successfully!");

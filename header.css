@@ -1,0 +1,119 @@
+/* header.css */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: rgb(165, 21, 21);
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+}
+
+.phone-number, .email-address, .sinhala, .tamil, .english {
+    color: white; /* Set font color to white */
+    margin-right: 20px;
+}
+
+
+.header2 {
+    background-color: rgb(255, 255, 255);
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.home, .about, .service, .notice, .news, .downloads, .contactus, .search{
+    color:black; /* Set font color to white */
+    margin-right: 20px;
+}
+
+/* Style for the search box */
+.search-box {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    width: 60px; /* Adjust the width of the search input as needed */
+    margin-right: 10px; 
+    border-radius: 5px; 
+    border: 1px solid #ccc; 
+    padding: 5px; 
+}
+
+/* Style the red placeholder */
+.search-input::placeholder {
+    color: red; /* Set the placeholder text color to red */
+}
+
+/* Style the image in header2 */
+.header2 img {
+    width: 250px; 
+    height: auto; 
+    margin-right: 20px; 
+}
+
+/* Style for header3 */
+.header3 {
+    height: 90px;
+    width: 100%;
+    background-color: lightgray;
+    padding: 5px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style the images within header3 */
+.header3 img {
+    width: auto; 
+    height: 190px; 
+    margin-right:0px; 
+}
+
+/* Style the text on top of the images */
+.image-text {
+    position: absolute;
+    top: 68%; 
+    left: 250px; 
+    font-size: 28px; 
+    color: rgb(186, 43, 43); 
+    padding: 5px 10px;  
+    font-weight: bold;
+
+}
+
+.image-text2{
+    position: absolute;
+    top: 70%; 
+    left: 80%; 
+    font-size: 14px; 
+    color: rgb(186, 43, 43); 
+    padding: 5px 10px;
+    
+}
+
+.image-text3 {
+    position: absolute;
+    top: 70%; 
+    left: 85%; 
+    font-size: 14px; 
+    color: rgb(186, 43, 43); 
+    padding: 5px 10px;
+    
+}
