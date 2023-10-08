@@ -13,40 +13,47 @@
 <body>
     <iframe src="header.html" frameborder="0" scrolling="no" width="100%" height="180"></iframe>
     <div class="container">
-        <h1 class="text-center mt-4">APPLICATION FOR REGISTRATION OF TRADE UNIONS</h1>
-        <h2>FORM</h2>
+        <h3 class="text-center mt-4">APPLICATION FOR REGISTRATION OF TRADE UNIONS</h3>
+        <h6 class="text-center mt-2">(B-FORM)</h6>
+        
         <form id="dataForm" class="custom-form" action="upload.php" method="POST" enctype="multipart/form-data">
             <div class="form-group">
+                <br>
+                <h6 class="text-center mt-2">FORM</h6>
+                <br>
                 <label for="name">Name of Trade Union</label>
-                <input type="text" class="form-control" name="name" id="name" oninput="checkNameExists()" required>
+                <input type="text" class="form-control" name="name" id="name" oninput="checkNameExists()" placeholder="Enter name of trade union" required>
                 <div id="nameError" class="text-danger"></div>
              </div>
 
              <div class="form-group">
                 <label for="address">Address:</label>
-                <input type="text" class="form-control" name="address" id="address" required>
+                <input type="text" class="form-control" name="address" id="address" placeholder="Enter your address" required>
              </div>
             
              <div class="form-group">
                 <label for="date">Date of Establishment of Trade Union</label>
-                <input type="date" class="form-control" name="date" id="date" required>
+                <input type="date" class="form-control" name="date" id="date"  required>
              </div>
-            
-             <label for="name">President</label>
+
+            <br> 
+            <br>          
+            <label for="presidentName" style="background-color: rgb(192, 219, 255); color: rgb(0, 119, 255); padding: 10px 425px 10px 10px; border-radius: 5px;">President</label>
+                       
 
              <div class="form-group">
                 <label for="preName">Name</label>
-                <input type="text" class="form-control" name="preName" id="preName" required>
+                <input type="text" class="form-control" name="preName" id="preName" placeholder="Enter name of president" required>
              </div>
              <div class="form-group">
                 <div class="row">
                     <div class="col">
                         <label for="preNIC">National Identity Card (NIC)</label>
-                        <input type="text" class="form-control" name="preNIC" id="preNIC" required>
+                        <input type="text" class="form-control" name="preNIC" id="preNIC" placeholder="Enter NIC Number" required>
                     </div>
                     <div class="col">
                         <label for="preWhatNum">Whatsapp Number</label>
-                        <input type="text" class="form-control" name="preWhatNum" id="preWhatNum" required>
+                        <input type="text" class="form-control" name="preWhatNum" id="preWhatNum" placeholder="Enter Whatsapp Number" required>
                     </div>
                 </div>
              </div>
@@ -54,30 +61,32 @@
                 <div class="row">
                     <div class="col">
                         <label for="preConNum">Contact Number</label>
-                        <input type="text" class="form-control" name="preConNum" id="preConNum" required>
+                        <input type="text" class="form-control" name="preConNum" id="preConNum" placeholder="Enter Contact Number" required>
                     </div>
                     <div class="col">
                         <label for="preEmail">Email</label>
-                        <input type="text" class="form-control" name="preEmail" id="preEmail" required>
+                        <input type="text" class="form-control" name="preEmail" id="preEmail" placeholder="Enter Email Address" required>
                     </div>
                 </div>
             </div>
 
-            <label for="name">Secretary</label>
+            <br>
+            <br>
+            <label for="secretaryName" style="background-color: rgb(192, 219, 255); color: rgb(0, 119, 255); padding: 10px 425px 10px 10px; border-radius: 5px;">Secretary</label>
 
              <div class="form-group">
                 <label for="secName">Name</label>
-                <input type="text" class="form-control" name="secName" id="secName" required>
+                <input type="text" class="form-control" name="secName" id="secName" placeholder="Enter name of secretary" required>
              </div>
              <div class="form-group">
                 <div class="row">
                     <div class="col">
                         <label for="secNIC">National Identity Card (NIC)</label>
-                        <input type="text" class="form-control" name="secNIC" id="secNIC" required>
+                        <input type="text" class="form-control" name="secNIC" id="secNIC" placeholder="Enter NIC Number" required>
                     </div>
                     <div class="col">
                         <label for="secWhatNum">Whatsapp Number</label>
-                        <input type="text" class="form-control" name="secWhatNum" id="secWhatNum" required>
+                        <input type="text" class="form-control" name="secWhatNum" id="secWhatNum" placeholder="Enter Whatsapp Number" required>
                     </div>
                 </div>
              </div>
@@ -85,25 +94,26 @@
                 <div class="row">
                     <div class="col">
                         <label for="secConNum">Contact Number</label>
-                        <input type="text" class="form-control" name="secConNum" id="secConNum" required>
+                        <input type="text" class="form-control" name="secConNum" id="secConNum" placeholder="Enter Contact Number" required>
                     </div>
                     <div class="col">
                         <label for="secEmail">Email</label>
-                        <input type="text" class="form-control" name="secEmail" id="secEmail" required>
+                        <input type="text" class="form-control" name="secEmail" id="secEmail" placeholder="Enter Email Address" required>
                     </div>
                 </div>
             </div>
 
-            <label for="name">Upload B Form</label>
-            
+            <br>
+            <br>
+            <label for="bForm" style="background-color: rgb(192, 219, 255); color: rgb(0, 119, 255); padding: 10px 387px 10px 10px; border-radius: 5px; white-space: nowrap;">Upload B Form</label>
+
             <div class="form-group">
                 <label for="file">Upload B-Form</label>
                 <input type="file" class="form-control-file" name="file" id="file">
             </div>
             
-                      
+            <br>
 
-            
 
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
