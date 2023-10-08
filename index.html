@@ -7,15 +7,21 @@
     
     <!-- Include Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
     <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="style.css">
+    
 
 </head>
 <body>
     <iframe src="header.html" frameborder="0" scrolling="no" width="100%" height="180"></iframe>
     <div class="container">
         <h3 class="text-center mt-4">APPLICATION FOR REGISTRATION OF TRADE UNIONS</h3>
-        <h6 class="text-center mt-2">(B-FORM)</h6>
-        
+        <h6 class="text-center mt-2">(B-FORM)</h6>    
+
+        <div class="form-instructions-container">
+
         <form id="dataForm" class="custom-form" action="upload.php" method="POST" enctype="multipart/form-data">
             <div class="form-group">
                 <br>
@@ -117,6 +123,21 @@
 
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
+
+        <div class="text-muted instructions">
+            <h5>Instructions</h5>
+            <ul>
+                <li>Enter the name of Trade Union. This name should be unique. Otherwise, the request will be rejected.</li>
+                <li>Enter the registered address of the office of the trade union.</li>
+                <li>Select the established date of the trade union using the date picker.</li>
+            </ul>
+            <img src="img/white-btn.webp" alt="White Button" style="width: 250px; height: auto;">
+        </div>
+        
+
+        </div>
+         
+
     </div>
 
     <!-- Include Bootstrap JS (optional) -->
