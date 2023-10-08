@@ -24,7 +24,7 @@ body, html {
 }
 
 .phone-number, .email-address, .sinhala, .tamil, .english {
-    color: white; /* Set font color to white */
+    color: white;
     margin-right: 20px;
 }
 
@@ -38,7 +38,7 @@ body, html {
     align-items: center;
 }
 .home, .about, .service, .notice, .news, .downloads, .contactus, .search{
-    color:black; /* Set font color to white */
+    color:black; 
     margin-right: 20px;
 }
 
@@ -49,7 +49,7 @@ body, html {
 }
 
 .search-input {
-    width: 60px; /* Adjust the width of the search input as needed */
+    width: 60px; 
     margin-right: 10px; 
     border-radius: 5px; 
     border: 1px solid #ccc; 
@@ -58,7 +58,7 @@ body, html {
 
 /* Style the red placeholder */
 .search-input::placeholder {
-    color: red; /* Set the placeholder text color to red */
+    color: red; 
 }
 
 /* Style the image in header2 */

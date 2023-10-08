@@ -70,7 +70,7 @@ font-family: Arial, sans-serif;
     color: rgb(194, 194, 0); 
     padding: 5px; 
     border: 1px solid rgb(194, 194, 0);
-    width: 130px; /* Set the width to auto to adjust to the content */
+    width: 130px; 
     height: auto;
     border-radius: 10px; 
     display: inline-block;
@@ -78,7 +78,6 @@ font-family: Arial, sans-serif;
 }
 
 .customer-info {
-    font-size: 10px; /* Set the font size to a smaller size */
-    color: rgb(194, 194, 0); /* Set the font color to yellow */
-    
+    font-size: 10px; 
+    color: rgb(194, 194, 0);
 }
