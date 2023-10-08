@@ -1,0 +1,84 @@
+/* Styling for the black footer */
+.black-footer {
+    background-color: #000;
+    color: #fff;
+    padding: 70px 0;
+}
+
+.black-footer .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.black-footer .footer-left,
+.black-footer .footer-right {
+    flex: 1;
+    margin: 10px;
+}
+
+.black-footer .footer-topic {
+    font-weight: bold;
+}
+
+.black-footer .footer-subtopic {
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+    padding: 0 20px;
+}
+
+.red-footer {
+    background-color: rgb(165, 21, 21);
+    color: #fff;
+    padding: 5px 0;
+}
+
+.red-footer .red-footer-container {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.black-footer .footer-subtopic {
+font-size: 13px;
+line-height: 2.0; 
+font-family: Arial, sans-serif;
+}
+
+/* Styling for the QR image and "Call 1919" text */
+.footer-qr-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px; 
+    margin-left: 150px;
+}
+
+.footer-qr {
+    width: 100px; 
+    height: auto;
+}
+
+.call-1919 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px; 
+    color: rgb(194, 194, 0); 
+    padding: 5px; 
+    border: 1px solid rgb(194, 194, 0);
+    width: 130px; /* Set the width to auto to adjust to the content */
+    height: auto;
+    border-radius: 10px; 
+    display: inline-block;
+    text-align: center;
+}
+
+.customer-info {
+    font-size: 10px; /* Set the font size to a smaller size */
+    color: rgb(194, 194, 0); /* Set the font color to yellow */
+    
+}
